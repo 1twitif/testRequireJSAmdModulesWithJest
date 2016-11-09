@@ -1,10 +1,14 @@
 (()=> {
 	const dependencies = ['./dep.js'];
 	const libEnv = function (dep) {
+	
+		// lib content
 		function theAnswer (){
 			return dep.answer;
 		}
+		
 		return {theAnswer}; // exports
+		
 	};
 	//AMD & CommonJS compatibility stuff
 	// CommonJS
